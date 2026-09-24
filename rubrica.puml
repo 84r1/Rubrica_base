@@ -1,0 +1,17 @@
+@startuml
+:utente: as x
+:rubrica: as r
+x  -->(cerca contatto)
+(cerca contatto) <--> r
+x -->(crea contatto)
+
+(crea contatto) --> r
+
+(elimina contatto) ..> (verifica contatto): <<include>>
+x -->(elimina contatto)
+
+(elimina contatto) --> r
+
+(verifica contatto) --> r
+
+@enduml
