@@ -1,8 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 void main() {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Numeri massimi rubrica: ");
+    Rubrica rubrica = new Rubrica(sc.nextInt());
+    rubrica.creaContatto(sc.next(),sc.next(),sc.next(),sc.next());
 
 
-    
-    }
 }
