@@ -3,6 +3,7 @@ import java.util.Scanner;
 void main() {
     Scanner sc = new Scanner(System.in);
     int scelta;
+    String datrovare;
     System.out.print("Numeri massimi rubrica: ");
     Rubrica rubrica = new Rubrica(sc.nextInt());
     do {
@@ -38,7 +39,11 @@ void main() {
                 break;
 
             case 2:
-
+                System.out.println("Con cosa vuoi cercarlo?  1. Nome  2. Cognome  3. Telefono");
+                scelta = sc.nextInt();
+                System.out.print("Inserisci il valore da cercare: ");
+                datrovare = sc.next();
+                rubrica.cercaContatto(datrovare, scelta);
                 break;
 
             case 3:
@@ -52,3 +57,4 @@ void main() {
     }while(scelta != 0);
 
 }
+
