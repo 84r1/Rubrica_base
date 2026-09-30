@@ -3,7 +3,7 @@ public class Rubrica {
     public Rubrica(int lunghezza){
         contattiRubrica = new Contatto[lunghezza];
     }
-    public boolean creaContatto(String Nome,String Cognome,String Numero,String Etichetta){
+    public boolean creaContatto(String Nome,String Cognome,String[] Numero,String[] Etichetta){
         for (int i = 0; i <= contattiRubrica.length; i++){
             if (i >= contattiRubrica.length){
                 return false;

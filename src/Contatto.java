@@ -10,7 +10,7 @@ public class Contatto {
     private String cognnome;
     private NumeroEtichettato numeroE;
 
-    public Contatto (String Nome,String Cognome,String Numero,String Etichetta){
+    public Contatto (String Nome,String Cognome,String[]Numero,String[]Etichetta){
         nome = Nome;
         cognnome = Cognome;
         numeroE = new NumeroEtichettato(Numero, Etichetta);
@@ -23,10 +23,10 @@ public class Contatto {
     public String getCongnome() {
         return cognnome;
     }
-    public String getNumero() {
+    public String[] getNumero() {
         return numeroE.getNumero();
     }
-    public String getEtichetta() {
+    public String[] getEtichetta() {
         return numeroE.getEtichetta();
     }
 

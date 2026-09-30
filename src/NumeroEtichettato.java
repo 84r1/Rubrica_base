@@ -1,17 +1,17 @@
 public class NumeroEtichettato {
-    public String Numero;
-    public String Etichetta;
+    public String[]Numero;
+    public String[]Etichetta;
 
-    public NumeroEtichettato(String numero, String etichetta) {
+    public NumeroEtichettato(String[]numero, String[]etichetta) {
         Numero = numero;
         Etichetta = etichetta;
     }
 
-    public String getEtichetta() {
+    public String[] getEtichetta() {
         return Etichetta;
     }
 
-    public String getNumero() {
+    public String[] getNumero() {
         return Numero;
     }
 }
